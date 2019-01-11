@@ -1,0 +1,29 @@
+/**
+ * Automatenminimierer
+ * 
+ * Autor: Marvin Klimke
+ * Datum: 2016-06-29
+ *
+ * CC-BY-NC
+ */
+
+*
+{
+	font-family: sans-serif;
+}
+
+table.bordertable
+{
+	border-collapse: collapse;
+}
+
+table.bordertable th, table.bordertable td
+{
+	padding: 5px;
+	border: 1px solid black;
+}
+
+tr.thickborder th, tr.thickborder td
+{
+	border-top: 3px solid black;
+}

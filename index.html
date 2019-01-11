@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+
+Automatenminimierer
+
+Dieses Skript minimiert Moore- und Mealy-Automaten. Die Eingänge, Ausgänge und
+Zustände sowie die Automatentabelle werden vom Benutzer eingegeben.
+
+Autor: Marvin Klimke
+Datum: 2016-06-29
+
+CC-BY-NC
+
+-->
+
+<html>
+
+<head>
+	<title>Automatenminimierer</title>
+	
+	<link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+	
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+	<script type="text/javascript" src="jqwidgets/jqxnumberinput.js"></script>
+	<script type="text/javascript" src="jqwidgets/jqxinput.js"></script>
+	<script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+	<script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+	<script type="text/javascript" src="jqwidgets/jqxcombobox.js"></script>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+
+
+<body>
+	
+	<h1>Automatenminimierer</h1>
+	<p>Dieses Skript ermöglicht das Minimieren von Mealy- und Moore-Automaten.</p>
+	<br>
+	
+	<div id="mealymoore">
+		<h3>1. Auswahl des Automatentyps</h3>
+		<p>Möchten Sie einen Mealy- oder einen Moore-Automaten minimieren?</p>	
+		<p><input type="button" id="cmdMealy" value="Mealy-Automat" /> <input type="button" id="cmdMoore" value="Moore-Automat" /></p>
+	</div>
+	<br>
+	
+	<div id="numberParams">
+		<h3>2. Kardinalitäten der Mengen</h3>
+		<form id="formNumberParams">
+			<table><tr>
+				<td>Kardinalität der Eingangsmenge:</td>
+				<td><div id="numInput"></div></td>
+			</tr><tr>
+				<td>Kardinalität der Ausgangsmenge:</td>
+				<td><div id="numOutput"></div></td>
+			</tr><tr>
+				<td>Kardinalität der Zustandsmenge:</td>
+				<td><div id="numState"></div></td>
+			</tr></table>
+			<p><input type="button" id="cmdLoadSets" value="Weiter" /></p>
+		</form>
+	</div>
+	<br>
+	
+	<div id="paramSets"></div><br>
+	
+	<div id="fillAutomat"></div><br>
+	
+	<div id="result"></div><br>
+	
+	<div id="newdef"></div><br>
+	
+	<div id="print">
+		<p><input type="button" id="cmdPrint" value="Drucken" /> <input type="button" id="cmdStartOver" value="Neu Beginnen" /></p>
+	</div>
+	
+	<hr>
+	<div id="footer">
+		<p>Marvin Klimke (Kontakt: <a href="mailto:marvin.klimke@rwth-aachen.de">marvin.klimke@rwth-aachen.de</a>) in Grundgebiete der Informatik II im SoSe16 an der RWTH Aachen.</p>
+		<p>Alle Angaben ohne Gewähr!</p>
+		
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/de/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/de/88x31.png" /></a><br>
+		Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/de/">Creative Commons Namensnennung-Nicht kommerziell 3.0 Deutschland Lizenz</a>.
+	</div>
+	
+</body>
+
+</html>
